@@ -1,0 +1,138 @@
+﻿buildcubemaps 建立方体贴图
+host_timescale Value 更改游戏速度
+cl_drawhud	1 启用HUD的渲染
+cl_crosshair_alpha 0 关闭准星
+cl_viewmodelfovsurvivor 0 关闭手臂 
+cl_showfps	0 请参阅优化命令
+host_map	0当前地图名称
+mat_info 显示材料系统信息
+mat_leafvis	0 绘制当前叶子的线框
+mat_normalmaps	0 打开法线贴图可视化
+mat_normals	0 打开表面法线可视化
+r_drawdecals	1 是渲染贴花。
+r_skybox	1 是启用天空框的渲染
+report_entities	列出所有实体
+sv_cheats	0 如果设置为1，则允许服务器上的作弊
+sv_friction	4 世界摩擦
+sv_gravity	600 世界引力
+god 1 无敌
+noclip 穿墙
+sv_infinite_ammo 1 无限弹药不换弹夹
+sb_takecontrol * 游戏中在4个人物之间切换控制(*代表Ellis,Nick,Rochelle,Coach也可以不要后缀为随机切换)
+z_difficulty "Easy"               简单
+z_difficulty "Normal"          正常
+z_difficulty "Hard"               困难
+z_difficulty "Impossible"   专家
+sv_consistency 0 防止部分mod冲突
+r_drawclipbrushes 1/2/0  2实体空气墙 1线条空气墙 0关闭空气墙
+r_drawothermodels 0/1/2 显示模型
+director_must_create_all_scavenge_items 1必刷物品
+director_debug_scavenge_items 1显示所有物品
+showtriggers_toggle查看触发事件
+bind "KEYS" "COMMAND"
+  例: bind "X" "go_away_from_keyboard" 快捷键闲置
+      bind "p" "callvote changedifficulty Easy" 快捷键改难度
+      bind "h" "toggle host_timescale 10 0.38"（速度切换）
+      bind "X" "STOP"快捷键停止录制demo
+      bind "X" "record XXX"快捷键录制demo，demo名字XXX
+sb_dont_bash 1 强制电脑队友不用手推
+sb_dont_shoot 1 强制电脑队友不开枪
+sb_all_bot_team 1 伺服器不会关闭
+sb_takecontrol * 游戏中在4个人物之间切换控制(*代表Ellis,Nick,Rochelle,Coach也可以不要后缀为随机切换)
+sb_move 0 所有电脑队友停止移动
+sb_escort 1 强制所有电脑队友保护你紧跟在你身边
+sb_open_fire 1 强制所有电脑队友不停的开火
+sb_crouch 1 强制所有电脑队友蹲下
+sb_flashlight 1 强制所有电脑队友使用手电筒(-1为强制不使用)
+sb_give * 给予所有电脑一个道具或武器(*代表物品名如fireaxe参见下面的道具参数)
+sb_give_random_weapon 给每个电脑随机分配一把武器
+thirdpersonshoulder 第三人称模式(再输入一次可还原为第一人称)
+nb_delete_all 踢掉所有电脑队友和附近的殭尸和所有的特殊殭尸(但是所有的殭尸还是会刷新)
+nb_blind 1 所有电脑僵尸都看不到你(但是撞到殭尸还是会攻击你)
+setinfo name * 更改玩家的名字(*代表你的名字改中文名要加""号)
+sv_lan 1 仅限局域网联机(0=外网可联机)
+sb_max_team_melee_weapons 0~4(预设值1)
+z_add 创造一个普通殭尸
+z_spawn jockey/charger/spitter/hunter/smoker/boomer/tank/witch 创造一个怪
+z_speed 250 普通殭尸的移动速度
+z_health 50 普通殭尸的生命值
+z_tank_health 4000 Tank大坦克的生命值
+z_tank_speed 210 Tank大坦克的移动速度
+z_witch_speed 300 Witch女巫的移动速度
+z_witch_health 1000 Witch女巫的生命值
+z_witch_damage 100 Witch女巫的伤害值
+z_exploding_health 50 Boomer爆炸怪的生命值
+z_exploding_speed 175 Boomer爆炸怪的移动速度
+z_gas_health 250 Smoker烟怪的生命值
+z_gas_speed 210 Smoker烟怪的移动速度
+z_hunter_health 250 Hunter猎人怪的生命值
+z_hunter_speed 300 Hunter猎人怪的移动速度
+z_spitter_health 100 Spitter口水婆的生命值
+z_spitter_speed 210 Spitter口水婆的移动速度
+z_charger_health 600 Charger小坦克的生命值
+z_charge_max_speed 500 Charger小坦克的移动速度
+z_charge_max_damage 10 Charger小坦克的摔击伤害
+z_jockey_health 325 Jockey骑头怪的生命值
+z_jockey_speed 250 Jockey骑头怪的移动速度
+z_jockey_ride_damage 3 Jockey骑头怪的每秒伤害
+z_special_spawn_interval 45 刷新特殊殭尸的时间间隔
+director_force_panic_event 呼叫尸潮事件
+director_panic_forever 1 强制尸潮事件不断
+upgrade_add Incendiary_ammo 获得燃烧子弹的升级效果
+upgrade_add explosive_ammo 获得爆炸子弹的升级效果
+upgrade_add laser_sight 获得激光瞄准的升级效果
+give rifle_m60 M60机枪
+give adrenaline 肾上腺素针
+give defibrillator 电震仪器
+give first_aid_kit 医药包
+give pain_pills 药丸
+give gascan 汽油红桶
+give propanetank 煤气罐
+give oxygentank 氧气瓶
+give pipe_bomb 炸弹
+give molotov 燃烧酒瓶
+give vomitjar 胆汁瓶
+give autoshotgun 1代的连发散弹鎗
+give shotgun_spas 2代的连发散弹鎗
+give pumpshotgun 1代的单发散弹鎗
+give shotgun_chrome 2代的单发散弹鎗
+give hunting_rifle 1代的连狙
+give sniper_military 2代的连狙
+give rifle M16步枪
+give rifle_ak47 AK47步枪
+give rifle_desert SCAR步枪
+give smg 小型衝锋鎗
+give smg_silenced 消声器小型衝锋鎗
+give pistol 手枪
+give pistol_magnum 玛格南手枪
+give crowbar 铁撬棍
+give fireaxe 斧头
+give katana 东洋武士刀
+give chainsaw 电锯
+give grenade_launcher 榴弹发射器
+give cricket_bat 板球棒
+give baseball_bat 棒球棍
+give frying_pan 平底锅
+give electric_guitar 电吉他(仅限第2、5大关战役可用)
+give tonfa 警棍
+give machete 砍刀
+give upgradepack_explosive 爆炸子弹升级铁盒
+give upgradepack_incendiary 燃烧子弹升级铁盒
+give cola_bottles 可乐
+give melee 猎人殭尸的手
+give gnome 圣诞老人
+give fireworkcrate 一盒烟花
+give sniper_awp 麦格农大型狙击枪(需要插件CS隐藏武器重新读取地图才有伤害)
+give sniper_scout 斯太尔小型狙击枪(需要插件CS隐藏武器重新读取地图才有伤害)
+give smg_mp5 MP5衝锋鎗(需要插件CS隐藏武器重新读取地图才有伤害)
+give rifle_sg552 SIG SG552步枪(需要插件CS隐藏武器重新读取地图才有伤害)
+give health 加满血
+give ammo 加满弹夹
+melee_range 70 (预设为70)近战武器的伤害范围数值越高能砍得越远
+map 地图名 versus 对抗模式
+map 地图名 realism 写实模式
+map 地图名 survival 生存模式
+map 地图名 scavenge 清道夫模式
+vs_max_team_switches 1000 对抗换对次数
+
+By LilSaint

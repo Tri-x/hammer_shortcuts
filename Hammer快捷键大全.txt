@@ -1,0 +1,160 @@
+﻿Hammer热键大全
+
+工具 Tools:
+	Shift+S 选择工具
+	Shift+G 缩放工具
+	Shift+C	镜头工具
+	Shift+E	实体工具
+	Shift+B	固体工具
+	Shift+A	材质工具
+	Shift+T	应用当前材质工具
+	Shift+D	印图工具
+	Shift+O	覆盖工具
+	Shift+X	剪切工具
+	Shift+V	顶点工具
+
+取消,重做 Undo/Redo:
+	Ctrl+Z 取消
+	Ctrl+Y 重做
+
+选取工具 Selection Tool:
+	Ctrl 可以选取多个物体
+	Shift 可仅仅旋转15度;同时移动物体,将克隆此物体
+	左键 选取物体
+	Esc 取消选取状态
+
+相机视角工具 Camera Tool:
+	Shift or Alt 拖动创建一个新视角
+	PgUp 循环上一个视窗视角位置
+	PgDn 循环下一个视窗视角位置
+	Delete 删除当前视角位置
+	Ctrl 同时移动视角
+
+固体工具 Block Tool:
+	鼠标左键 拖动可创建一个新的形状物体
+	Enter 创建物体
+	Esc 取消创建
+	Alt+Shift+C 插入预设物体
+
+纹理材质工具 Texture Application Tool:
+	Ctrl 可选取多个面
+	Shift 左键单击一个面可选取此物体的全部面
+	Shift+Ctrl 同上,同时选取一个物体的所有面
+	右键单击 在单击的此面上应用当前纹理贴图
+	Alt+Right-click 在单击的此面上应用当前纹理贴图并外包装
+
+位移编辑工具,选择模式 Displacement Editing Tool, Select Mode:
+	Ctrl 选取多面
+	Shift 左键单击一个面可选取此物体的全部面
+	Shift+Ctrl 同上
+
+位移编辑工具,Alpha贴图模式 Displacement Editing Tool, Paint Alpha mode:
+	Ctrl 选取多面
+	Shift+Ctrl 左键单击一个面可选取此物体的全部面
+
+覆盖工具 Overlay Tool:
+	Shift 同时拖动覆盖贴图顶点吸附至另一个顶点
+	Ctrl 选取多个覆盖贴图
+
+切割工具 Clipper Tool:
+	左键 单击并拖动创建一个剪切面
+	Shift 单击并拖动创建另一个剪切面
+	Enter 完成剪切
+	Ctrl 可同时拖动剪切面控制柄
+	O 显示或隐藏剪切距离
+	Shift+X 循环剪切模式
+
+顶点工具 Vertex Edit Tool: 
+	Ctrl+F 分割面层,必须两个边或者面被选中
+	Alt+E 打开顶点缩放对话框
+	Enter 关闭顶点缩放对话框并执行缩放
+	Shift+V 循环顶点/边显示模式
+
+文件选项 File Operations:
+	Ctrl+N 创建新文件
+	Ctrl+O 打开已有文件
+	Ctrl+S 保存当前文件
+	Alt+B 再次导出
+	F9 编译地图
+	Ctrl+Shift+S 打开声音浏览表
+
+剪贴板,选择项 Clipboard/Selection:
+	Ctrl+C 拷贝对象物体到剪贴板
+	Ctrl+V 粘贴物体
+	Ctrl+X 剪切物体
+	CTRL+D 删除
+	Shift+Q/Esc 清除当前选择
+	PgUp 上一个选择物体
+	PgDn 下一个选择物体
+	Alt+Enter 打开当前选中物体的属性介面
+
+剪切,挖空 Carving/Hollowing:
+	Ctrl+Shift+C 剪切选中物体
+	Ctrl+H 挖空选中物体
+
+分组 Grouping:
+	Ctrl+G 将已选择的物体组为一组
+	Ctrl+U 将已选择的组拆分
+	Ctrl+R 将选择的物体做为预制件
+	Ctrl+T 将已选择物体转变为实体,或者将物体添加到一个选中的实体中
+	Ctrl+W 切换“忽略组”模式以绕过实体和组选择
+	Ctrl+Shift+W 将选中的固体实体移动到地图中
+
+视窗 Viewports:
+	Ctrl+A 自动显示4个视窗
+	Shift+Z 最大化或者恢复当前视窗
+	Arrow keys 在三维或者二维视图中移动选中物体
+	Shift+Arrow keys 克隆选中物体,并在三维或者二维视图中移动它
+	F6 循环下一个活动视窗
+	Shift+F6 循环上一个活动视窗
+
+二维视图 2D Views:
+	Ctrl+I 将选中物体横向翻转
+	Ctrl+L 将选中物体竖向翻转
+	Ctrl+B 将选中物体牵引到栅格点
+	Ctrl+Shift+B 同上
+	Tab 切换视窗类别
+	+/- 缩放
+	1~9 缩放比例 
+	Space 按着空格键,使用左键可拖动视窗摆放位置
+	Alt 禁用吸引至栅格
+	Ctrl+E 将选中物体在二维视窗中居中
+
+三维视窗 3D View:
+	Space (holding) 同时按着左键,可以在三维视窗中以任意角度旋转 同时按着右键,可以在三维视窗中任意移动
+	Space+Shift 左键同上功能;同时按着右键,可以前后的移动
+
+辅助操作 Auxiliary operation:
+	鼠标滚轮 缩放
+	W 向前
+	S 向后
+	A 向左
+	D 向右
+	Z 使得三维视窗转变为noclip模式
+	P 开启或关闭三维栅格
+	O 在视窗中显示FPS
+	I 显示沙盒中所有可见物体
+	X 显示已选取物体操作柄,以便缩放物体
+	R 恢复隐藏
+	1 减少剪切面
+	2 增加剪切面
+	Ctrl+Shift+E 将已选取物体在三维视窗里居中
+
+栅格 Grid:
+	[ 减少栅格尺寸
+	] 增加栅格尺寸
+	Shift+R 开启或关闭栅格
+	Shift+W 启用栅格吸引
+
+其它 Miscellaneous:
+	Shift+L 纹理锁定
+	Ctrl+M 打开变形对话框
+	Alt+P 打开程序检查对话框
+	Esc 取消所有选中状态
+	Ctrl+Shift+G 打开笔刷序号对话框
+	Ctrl+Shift+F 打开实体选择对话框
+	Ctrl+Shift+R 打开替换实体对话框
+
+																				  By：木卫二
+																		   XLSX整理 By:王八蛋老板黄鹤
+																			TXT整理 By：LilSaint

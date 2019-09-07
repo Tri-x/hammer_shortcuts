@@ -1,0 +1,222 @@
+主要操作(NAV编译必备):
+1进入模式 0退出模式 
+sv_cheats 0/1
+开启指令模式
+noclip
+穿墙模式
+god 0/1
+无敌模式
+nav_edit 0/1
+NAV编译模式
+director_start
+开启导演模式 即能刷僵尸
+director_stop
+关闭导演模式 即不能刷僵尸
+z_debug 0/1
+显示游戏属性
+z_show_flow_delta 1/2
+1显示指向的区域的Flow 2显示整个活动区域集的Flow
+nav_mark_walkable
+将当前位置标记为可行走位置
+nav_clear_walkable_marks
+擦除之前放置的任何可行走位置
+nav_generate
+为当前地图生成导航网格
+nav_generate_incremental
+再次运行生成过程而不更改现有网格 这些新区域必须手动连接到现有网格
+nav_generate_incremental_range <value>
+生成指定范围内的导航网格
+nav_auto_build_area
+在编辑光标周围构建高精度区域并创建它们
+nav_save
+将当前导航网格保存到磁盘 
+nav_analyze
+分析当前的导航网格并将其保存到磁盘
+nav_load
+加载当前地图的导航网格
+nav_begin_drag_deselecting
+开始拖动选择区域
+nav_end_drag_deselecting
+停止拖动选择区域
+nav_begin_drag_selecting
+开始拖动选择区域
+nav_end_drag_selecting
+停止拖动选择区域
+nav_toggle_in_selected_set
+选择十字准线指向的导航网格区域
+nav_clear_selected_set
+取消选择所选的导航网格区域
+nav_flood_select
+选择所有已连接的导航网格 从游戏中枪十字准线指向的导航网格开始 并不意味着选择了所有导航网格区域
+select_with_attribute <value>
+选择/突出显示标有一个指定属性的导航网格区域
+nav_delete
+删除当前突出显示的区域
+nav_delete_marked
+删除当前标记的区域
+nav_split
+区域拆分
+nav_merge
+两个区域合并为一个区域
+nav_mark
+在光标下标记区域或梯形
+nav_unmark
+清除标记的区域或梯形图
+nav_begin_area
+定义新区域一角
+nav_end_area
+定义新区域第二个角并创建它 
+nav_connect
+要连接两个区域
+nav_disconnect
+要断开两个区域
+nav_splice
+在两个选择区域间创建新的连接区域
+nav_corner_select
+选择当前标记区域的一角
+nav_corner_raise
+提高当前标记区域的选定角
+nav_corner_lower
+降低当前标记区域的选定角
+nav_corner_place_on_ground
+将当前标记区域的选定角置于地面上
+nav_clear_attribute <attribute>
+清除指定的属性
+clear_attribute <attribute>
+清除指定的属性
+wipe_attributes
+清除导航网格的选定部分上的所有属性
+nav_ladder_flip
+翻转所选梯子的方向 
+nav_show_ladder_bounds
+绘制地图中所有func_ladders的边界框 
+nav_build_ladder
+在光标下的可爬升表面上构建导航梯 
+nav_gui
+NAV指南
+nav_trouble_report
+NAV报告问题
+nav_recompute_flow
+Flow再次演算
+nb_delete_all
+删除游戏中的所有NPC
+nb_move_to_cursor
+命令NPC移动到游戏中枪十字准线指向的区域
+nav_crouch
+AI必须蹲伏在此区域
+nav_precise
+AI不要避开障碍
+nav_jump
+AI通过跳跃遍历此区域
+nav_no_jump
+AI不要跳入此区域
+nav_stop
+AI进入此区域时必须停止
+nav_walk
+AI遍历此区域行走
+nav_run
+AI遍历此区域的运行
+nav_avoid
+AI尽可能避开此区域
+nav_transient
+AI区域是暂时的并且可能被阻塞
+nav_dont_hide
+AI区域不适合隐藏点
+nav_stand
+AI隐藏时站立
+
+高级操作(可略过):
+nav_fog_mark
+设置所选区域的雾值
+nav_fog_pick
+设置所选区域的雾值
+nav_fog_select_place
+选择具有给定雾位的所有区域
+nav_begin_shift_xy
+开始移动选定的集合
+nav_stop_shift_xy
+完成移动选定的设置
+nav_add_to_selected_set
+将当前区域添加到所选集
+nav_add_to_selected_set_by_id
+按ID选择导航 这对于控制台中有关UpdateBlocked的报告和可能的Flow错误有用
+nav_begin_deselecting
+开始不断从所选集中删除
+nav_end_deselecting
+停止从所选集中继续删除
+nav_begin_selecting
+开始不断添加到所选集
+nav_end_selecting
+停止不断添加到所选集
+nav_place_list
+列出地图中使用的所有地名 
+nav_toggle_place_mode
+将编辑器切换到Place模式和从Place模式切换
+nav_set_place_mode
+将编辑器设置为Place模式或从Place模式中移出
+nav_place_floodfill
+将光标下面区域的位置设置为当前位置
+nav_place_pick
+将当前位置设置为光标下区域的位置
+nav_toggle_place_painting
+切换场所绘画模式
+nav_mark_unnamed
+标记没有地名的区域
+nav_check_file_consistency
+扫描地图目录并报告任何缺失的导航
+nav_update_blocked
+更新每个导航区域的阻止/解除阻止状态
+nav_check_floor
+更新每个导航区域的阻止/解除阻止状态
+nav_check_stairs
+更新导航网格STAIRS属性
+nav_fog_print_used
+打印出地图中使用的雾名称列表 
+nav_fog_set
+如果不带参数使用 将列出所有可用的雾值 如果给出了Fog参数 则设置当前的Fog 
+nav_fix_playerclips
+用NAV_PLAYERCLIP标记的Fixup节点 
+nav_remove_unused_jump_areas
+移除最多1个连接到梯子或非跳跃区域的跳跃区域 
+nav_strip
+从网格中的所有区域剥离所有隐藏点 接近点和遇到点 
+nav_warp_to_mark
+将玩家扭曲到标记区域 
+nav_compress_id
+重新排序区域和梯子ID 使它们连续
+控制台变量
+nav_area_bgcolor RGBA
+RGBA颜色在编辑时作为导航区域的背景颜色绘制 
+nav_area_max_size
+导航生成中创建的最大区域大小 默认设置为50
+nav_blockers_can_affect_flow
+默认设置为1
+nav_create_area_at_feet
+将nav_begin_area Z锚定到编辑玩家的脚 默认设置为0
+nav_create_place_on_ground （0或1）
+如果设置为1 则在手动创建时 导航区域将与地面齐平 
+nav_coplanar_slope_limit 值
+度量标准 用于确定相邻的可行走样本是否为平面 并可用于创建单个平面导航区域 如果两个相邻候选单位法线的点积等于或大于值 则它们被认为是共面的并且可以合并 因此 值的范围可以从0到1 
+nav_coplanar_slope_limit_displacement
+默认设置为0.7
+nav_corner_adjust_adjacent
+升高/降低角落时 半径用于升高/降低附近区域的角落 默认设置为18
+nav_debug_blocked
+默认设置为0
+nav_debug_finale_area
+显示压轴区域和选定的压轴中心的范围 最有可能专门为L4D系列设计 默认设置为0
+nav_displacement_test
+检查嵌入在位移中的节点（对于开发中的地图非常有用） 默认设置为10000
+nav_draw_limit 计数
+在编辑模式下绘制的最大区域数 默认设置为500
+nav_generate_fixup_jump_areas
+将过时的跳转区域转换为双向连接 默认设置为1
+nav_flood_select_tolerance
+可选区域与起始区域的允许z距离 默认设置为0
+nav_fog_edit
+默认设置为0
+nav_generate_fencetops
+自动生成围栏和障碍物顶部的导航区域 默认设置为1
+
+源自:https://developer.valvesoftware.com/wiki/Navigation_Mesh_Commands
+整理:LilSaint
